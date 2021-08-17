@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Twitter Profile Clone</title>
+  </head>
+  
+  <body>
+    <div class="grid-container">
+      <!-- sidebar-->
+      <div class="sidebar">
+        <div id="top-sidenav">
+           <a href="#" class="twitter">
+            <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Bird-512.png" alt="twitter" width="46px">
+          </a>
+
+          <a href="#" >
+            <div class="home">
+            <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Home-512.png" alt="home button" id="homeicon"><span>Home</span>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="search">
+              <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Search-512.png" alt="search button" id="explorebutton"><span>Explore</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="notification">
+             <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Bell-512.png" alt="notification bell" id="notificationbutton"><span>Notifications</span>
+            </div>
+          </a>
+          <a href="#">
+            <div  class="messages">
+             <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Mail-512.png" alt="messages envelope" id="messagesbutton"><span>Messages</span>
+            </div>
+          </a>
+          <a href="#">
+            <div  class="profile">
+             <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Persone-512.png" alt="profile button" id="profilebutton"><span>Profile</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="morestuff">
+             <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/News-512.png" alt="more ellipses" id="morestuffbutton"><span>More</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="tweet">
+              <img src="https://cdn4.iconfinder.com/data/icons/twitter-ui-set/128/Write-512.png" alt="make a tweet" id="maketweetbutton"><span>Tweet</span>
+            </div>
+          </a>
+        </div>
+        <div id="bottom-sidenav">
+           <a href="#">
+             <div  class="accountstuff">
+               <div id="accountbutton_bg">
+                <img src="https://www.dropbox.com/s/wtv4bethq8r3ysq/D-default.png?raw=1" alt="account stuff" width="40px" id="accountbutton">
+               </div>
+               <span>Dante Moon</span>
+             </div>
+           </a>
+        </div>
+      </div><!--end of sidebar-->
+
+      <div class="main">
+        <div class="name_tweetNum">
+          <img src="https://cdn1.iconfinder.com/data/icons/material-core/16/arrow-back-512.png" alt="back arrow" id="backarrow">
+          <span class="name_tweetNum_text">
+            <b>Dante Moon</b><br>
+            300 Tweets</span>
+        </div><!--end of name_tweetNum-->
+
+        <!--banner-->
+        <div class="banner">
+          <!--banner image-->
+          <div id="banner-img">
+            <img src="https://www.dropbox.com/s/xq4l495uosetypw/art-raw.jpg?raw=1" alt="banner picture" id="bannerimage">
+          </div>
+          <!-- end of banner image-->
+
+          <div id="profilepic">
+                <img src="https://www.dropbox.com/s/wtv4bethq8r3ysq/D-default.png?raw=1" alt="profile picture" width="134px" id="dantepic">
+          </div>
+
+          <div id="abovetext">
+            <button id="editprofile">Edit Profile</button>
+          </div>
+
+          <div id="banner-text">
+            <h1><b>Dante Moon</b></h1>
+            <p id="username">@dante.moon.dude</p>
+
+            <p id="bio">
+              He/Him/His
+            </p>
+            <p>
+              Artist. Always tired.
+            </p>
+            <p>
+              Other bio stuff.
+            </p>
+
+            <!--put a calendar icon right before the join-->
+            <div id="joinDate">
+              <img src="https://cdn0.iconfinder.com/data/icons/startup-17/32/startup-05-512.png" alt="calendar icon" width="20px" id="calendar">
+              <span id="whenjoin">Joined August 2014</span>
+            </div>
+
+            <div id="following_followers">
+              <span id="following"><b>386</b> Following</span>
+              <span id="followers"><b>400</b> Followers</span>
+            </div>
+          </div><!--banner text-->
+        </div><!--end of banner-->
+
+        <div class="tweet-content">
+          <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          </div>
+
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+
+        </div><!--tweet content-->
+
+      </div><!--end of main-->
+
+       <!--right side bar-->
+      <div class="right-sidebar">
+        <input type="text" placeholder="Search..." name="searchbar">
+
+        <div class="media-grid">
+          <div class="media-row">
+            <div class="media-column">
+              <img src="https://www.dropbox.com/s/m0wpne80g9lxcop/kitchen.jpg?raw=1" alt="kitchen" id="grid-img">
+              <img src="https://www.dropbox.com/s/u8il6r8zxnnhwj9/toph-desert.jpg?raw=1" alt="toph" id="grid-img">
+            </div>
+            <div class="media-column">
+              <img src="https://www.dropbox.com/s/hgyi4w9uvdkfqub/skull1.jpg?raw=1" alt="skull" id="grid-img">
+              <img src="https://www.dropbox.com/s/jmt2h078l5imr5a/theuden2-webtoon.jpg?raw=1" alt="theuden davut" id="grid-img">
+            </div>
+            <div class="media-column">
+              <img src="https://www.dropbox.com/s/8v3nh4fydlj9o0l/alex-webtoon.jpg?raw=1" alt="alex the great" id="grid-img">
+              <img src="https://www.dropbox.com/s/zp017yf21in6ybo/layout5.jpg?raw=1" alt="night layout" id="grid-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="youmightlike">
+          <h2>You might like</h2>
+
+          <div class="otherprofile">
+            <div class="otherprofile_pic">
+              <img src="https://www.dropbox.com/s/id2x7775o643s82/C-default.png?raw=1" alt="corbin" id="corbinpic">
+            </div>
+            <div class="otherprofile_text">
+              <h3>Corbin M.</h3>
+              <p>@C.Merlo</h2>
+            </div>
+            <div class="otherprofile_button">
+              <button id="followbutton">Follow</button>
+            </div>
+          </div><!--other profile 1-->
+          <div class="otherprofile">
+             <div class="otherprofile_pic">
+               <img src="https://www.dropbox.com/s/f2cyimiy6ljqja6/Ev-default.png?raw=1" alt="evertt" id="everettpic">
+            </div>
+             <div class="otherprofile_text">
+              <h3>Everett Merlo</h3>
+              <p>@Evee_M</h2>
+            </div>
+            <div class="otherprofile_button">
+              <button id="followbutton">Follow</button>
+            </div>
+          </div><!--other profile 2-->
+
+          <button id="showmore">Show more</button>
+
+        </div>
+
+        <div class="whatshappening">
+          <h2>what's happening</h2>
+          <div class="happening">
+            <p>Trending</p>
+            <h3>Father Sinclair</h3>
+            <p>240K ReTweets</p>
+          </div>
+
+          <div class="happening">
+            <p>Politics</p>
+            <h3>#spritemayor</h3>
+            <p>300K ReTweets</p>
+          </div>
+          <button id="showmore">Show more</button>
+        </div>
+
+        <div class="termsofservices">
+          <p>
+            terms of services&emsp;
+            Privacy Policy&emsp;
+            Cookie Policy&emsp;
+            Ads info&emsp;
+            More...&emsp;
+            2021 Twitter, Inc&emsp;
+          </p>
+        </div>
+      </div><!--end of right sidebar-->
+
+    </div><!--end of grid container-->
+  </body>
+</html>
